@@ -1,3 +1,12 @@
+### My thought process
+
+1. Understanding the code and gathering requirements (see list below for requirements I could gather within the given timeframe).
+2. Coming up with a better structure that is more scalable but especially easier to maintain.
+3. Refactor the code.
+4. Add a bundler (webpack) to transpile code into browser format.
+5. Create simple express server to serve to code, making it production ready.
+
+```
 - ability to add players to the game.
 - ability to roll a dice resulting in a number between 1 - 6.
 - ability to ask questions from 4 different categories ('pop', 'science', 'sports', 'rock).
@@ -17,3 +26,4 @@
 
 - game is finished when one of the players has 6 coins.
 - game is only playable when there are 2 or more players.
+```
