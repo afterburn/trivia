@@ -1,0 +1,26 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "- ability to add players to the game.\r - ability to roll a dice resulting in a number between 1 - 6.\r - ability to ask questions from 4 different categories ('pop', 'science', 'sports', 'rock).\r - ability to simulate answering a question.\r - ability to keep track of player scores (gold coins).",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "serve": "node server.js",
+    "test": "jasmine-node .",
+    "start": "concurrently \"npm run build\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.14.8",
+    "babel-loader": "^8.2.2",
+    "concurrently": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "jasmine-node": "^3.0.0",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
