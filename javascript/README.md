@@ -1,3 +1,12 @@
+### Usage
+
+```
+npm install
+
+npm run test (runs jasmine-node which will execute existing spec but is now using my refactored code)
+npm start (will transpile the code to browser format and serve using a simple node server, please wait until webpack is finished before attempting to visit http://localhost:3000)
+```
+
 ### My thought process
 
 1. Understanding the code and gathering requirements (see list below for requirements I could gather within the given timeframe).
