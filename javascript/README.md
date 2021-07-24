@@ -1,12 +1,19 @@
-Test with node.js
-=====================
+- ability to add players to the game.
+- ability to roll a dice resulting in a number between 1 - 6.
+- ability to ask questions from 4 different categories ('pop', 'science', 'sports', 'rock).
+- ability to simulate answering a question.
+- ability to keep track of player scores (gold coins).
 
-Install the jasmine-node plugin from https://github.com/mhevery/jasmine-node
+- whenever a question is answered correctly award a gold coin.
+  Math.floor(Math.random()\*10) == 7 is used to determine whether question was answered wrongly
+  This gives the player a 10% chance to answer incorrectly because it will compare a random
+  value between 0 - 9 with 7 (for some reason) which is a 1 in 10 chance.
 
-	npm install jasmine-node -g
+- if the question is answered incorrectly, player is placed inside penalty box
+  on the next tick player with penalty has to do a coin toss to determine whether or not they
+  are allowed to leave the penalty box, this is the roll % 2 != 0 part.
+  if the coin toss is won, then the player is allowed to answer a question in the same turn.
+  if answered incorrectly player has to go back into the penalty box.
 
-And execute:
-
-	jasmine-node .
-
-Any test source matching the pattern *.spec.js will be executed.
+- game is finished when one of the players has 6 coins.
+- game is only playable when there are 2 or more players.
