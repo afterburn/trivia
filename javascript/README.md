@@ -1,3 +1,7 @@
+# Game refactor challenge
+### Goal
+Refactor an existing codebase of a game to make it scalable and easier to maintain.
+
 ### Usage
 
 ```
@@ -15,25 +19,26 @@ npm start (will transpile the code to browser format and serve using a simple no
 4. Add a bundler (webpack) to transpile code into browser format so it can be served.
 5. Create simple express server to serve to code, making it "ready for production", thereby completing the assignment.
 
-### Gathered requirements
+### Requirements
+Below you will find a list of requirements I managed to gather from the existing code.
 ```
-- ability to add players to the game.
-- ability to roll a dice resulting in a number between 1 - 6.
-- ability to ask questions from 4 different categories ('pop', 'science', 'sports', 'rock).
-- ability to simulate answering a question.
-- ability to keep track of player scores (gold coins).
+- Ability to add players to the game.
+- Ability to roll a dice resulting in a number between 1 - 6.
+- Ability to ask questions from 4 different categories ('pop', 'science', 'sports', 'rock).
+- Ability to simulate answering a question.
+- Ability to keep track of player scores (gold coins).
 
-- whenever a question is answered correctly award a gold coin.
+- Whenever a question is answered correctly award a gold coin.
   Math.floor(Math.random()\*10) == 7 is used to determine whether question was answered wrongly
   This gives the player a 10% chance to answer incorrectly because it will compare a random
   value between 0 - 9 with 7 (for some reason) which is a 1 in 10 chance.
 
-- if the question is answered incorrectly, player is placed inside penalty box
+- If the question is answered incorrectly, player is placed inside penalty box
   on the next tick player with penalty has to do a coin toss to determine whether or not they
   are allowed to leave the penalty box, this is the roll % 2 != 0 part.
   if the coin toss is won, then the player is allowed to answer a question in the same turn.
   if answered incorrectly player has to go back into the penalty box.
 
-- game is finished when one of the players has 6 coins.
-- game is only playable when there are 2 or more players.
+- Game is finished when one of the players has 6 coins.
+- Game is only playable when there are 2 or more players.
 ```
