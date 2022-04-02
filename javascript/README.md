@@ -15,6 +15,7 @@ npm start (will transpile the code to browser format and serve using a simple no
 4. Add a bundler (webpack) to transpile code into browser format so it can be served.
 5. Create simple express server to serve to code, making it "ready for production", thereby completing the assignment.
 
+### Gathered requirements
 ```
 - ability to add players to the game.
 - ability to roll a dice resulting in a number between 1 - 6.
