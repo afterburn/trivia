@@ -7,13 +7,13 @@ npm run test (runs jasmine-node which will execute existing spec but is now usin
 npm start (will transpile the code to browser format and serve using a simple node server, please wait until webpack is finished before attempting to visit http://localhost:3000)
 ```
 
-### My thought process
+### Approach
 
-1. Understanding the code and gathering requirements (see list below for requirements I could gather within the given timeframe).
-2. Coming up with a better structure that is more scalable but especially easier to maintain.
+1. Understanding the code and gathering requirements.
+2. Designing a better code structure that is scalable and easy to maintain.
 3. Refactor the code.
-4. Add a bundler (webpack) to transpile code into browser format.
-5. Create simple express server to serve to code, making it production ready.
+4. Add a bundler (webpack) to transpile code into browser format so it can be served.
+5. Create simple express server to serve to code, making it "ready for production", thereby completing the assignment.
 
 ```
 - ability to add players to the game.
